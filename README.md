@@ -1,6 +1,6 @@
 # TULE - Stansteel & Hotmix: Add total cost to SO line and SO
 
-[Link]([url](https://www.odoo.com/web#id=3362729&menu_id=4722&action=4665&active_id=3362708&model=project.task&view_type=form)) to task
+[Link to task](https://www.odoo.com/web#id=3362729&menu_id=4722&action=4665&active_id=3362708&model=project.task&view_type=form) 
 
 ## Steps to complete the dev
 - [X] Add dependencies on SALE in __manifest__.py
