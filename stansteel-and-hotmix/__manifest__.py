@@ -13,9 +13,10 @@
     
     "license": "OPL-1",
     
-    "depends": ["base"],
+    "depends": ["sale"],
     
     "data": [
+        "views/sale_order_views_inherit.xml",
     ],
     
     "demo": [

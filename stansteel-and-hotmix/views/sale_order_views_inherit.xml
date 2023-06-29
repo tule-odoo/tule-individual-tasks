@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_sale_order_line_form_inherit_cost">
+            <field name="name">sale.oder.line.form.inherit.cost</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet//tree//field[@name='price_unit']" position="after">
+                    <field name="product_cost"/>
+                    <field name="product_total_cost"/>
+                </xpath>
+
+                <xpath expr="//field[@name='tax_totals']" position="after">
+                    <field name="order_margin" widget="monetary"/>
+                    <field name="order_total_cost" widget="monetary" class="oe_subtotal_footer_separator" style="font-weight: bold"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
