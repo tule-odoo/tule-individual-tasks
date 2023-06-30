@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="invoice_views_inherit_luxer">
+            <field name="name">invoice.views.inherit.luxer</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@id='header_right_group']" position="inside">
+                   <field name="property_partner" string="Site Address"/>
+                </xpath>
+            </field> 
+        </record>
+    </data>
+</odoo>
