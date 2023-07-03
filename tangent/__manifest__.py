@@ -4,7 +4,7 @@
     "summary": "Invoice Created from Task",
     
     "description": """
-Tangent Systems would like for draft invoices to be created based on the completion of tasks. This would help make sure they are not missing out on any billable services.
+    Tangent
     """,
     
     "version": "1.0.0",
@@ -13,9 +13,10 @@ Tangent Systems would like for draft invoices to be created based on the complet
     
     "license": "OPL-1",
     
-    "depends": ["base"],
+    "depends": ["project", "sale"],
     
     "data": [
+        "views/project_task_views_inherit.xml",
     ],
     
     
